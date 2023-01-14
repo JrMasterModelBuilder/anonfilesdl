@@ -14,6 +14,11 @@ A bash script using wget to download from an anonfiles link.
 Usage: anonfilesdl [options...] <url>
  -h, --help          Show help
  -V, --version       Show version
+
+Env:
+ ANONFILESDL_USER_AGENT=<string>        User agent string
+ ANONFILESDL_CA_CERTIFICATE=<file>      CA cert bundle
+ ANONFILESDL_NO_CHECK_CERTIFICATE=<0|1> Do not validate the server cert
 ```
 
 # Bugs
