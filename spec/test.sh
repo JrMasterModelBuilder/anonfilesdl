@@ -7,7 +7,7 @@ __self="${BASH_SOURCE[0]}"
 __dir="$(cd "$(dirname "${__self}")" > /dev/null && pwd)"
 __file="${__dir}/$(basename "${__self}")"
 
-dlurl='https://anonfiles.com/g806l9Iby0/jmmb_avatar_png'
+dlurl='https://anonfiles.com/41B4X1Zdye/jmmb_avatar_png'
 
 anonfilesdl="$(dirname "${__dir}")/anonfilesdl"
 tmpdir="${__dir}/tmp"
@@ -17,7 +17,7 @@ mkdir "${tmpdir}"
 pushd "${tmpdir}" > /dev/null
 
 "${anonfilesdl}" "${dlurl}"
-shasum -c "${__dir}/jmmb avatar.png.sha256"
+shasum -c "${__dir}/jmmb_avatar.png.sha256"
 
 popd > /dev/null
 rm -rf "${tmpdir}"
