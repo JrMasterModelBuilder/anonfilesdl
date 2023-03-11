@@ -15,3 +15,10 @@ jobs:
 
       - name: Test
         run: bash spec/test.sh
+
+      - name: Keep Alive
+        uses: gautamkrishnar/keepalive-workflow@v1
+        with:
+          commit_message: ${{ secrets.KA_COMMIT_MESSAGE }}
+          committer_username: ${{ secrets.KA_COMMIT_USER }}
+          committer_email: ${{ secrets.KA_COMMIT_EMAIL }}
